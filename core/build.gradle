@@ -1,0 +1,116 @@
+import groovy.NamespaceBuilder
+
+apply plugin: "distribution"
+
+def javaRuntime = System.properties["java.home"]
+def applicationId = project.rootProject.name
+def applicationName = "${project.rootProject.name}-${project.rootProject.version}"
+def applicationClassName = "ua.ivolynets.modfx.ModfxApplication"
+def preloaderClassName = "ua.ivolynets.modfx.ModfxPreloader"
+def pluginsDir = "${buildDir}/distributions/bundles/${applicationId}/plugins"
+
+def h2Version = "1.4.190"
+def jerseyVersion = "1.9"
+
+dependencies {
+	
+	compile files("${javaRuntime}/lib/jfxrt.jar")
+	compile files("${javaRuntime}/../lib/ant-javafx.jar")
+	
+	provided "com.h2database.h2:${h2Version}"
+	provided "com.sun.jersey:jersey-client:${jerseyVersion}"
+	
+}
+
+jar {
+	
+	actions = []
+	
+	doLast {
+		
+		copy {
+			from configurations.provided
+			into project.libsDir
+		}
+		
+		def antfx = NamespaceBuilder.newInstance(ant, "javafx:com.sun.javafx.tools.ant")
+		
+		ant.taskdef(
+			resource: "com/sun/javafx/tools/ant/antlib.xml",
+			uri: "javafx:com.sun.javafx.tools.ant",
+			classpath: configurations.compile.asPath
+		)
+		
+		antfx.application(
+			id: applicationId,
+			name: applicationId,
+			mainClass: applicationClassName,
+			preloaderClass: preloaderClassName
+		)
+		
+		antfx.jar(destFile: archivePath) {
+			application(refid: applicationId)
+			fileset(dir: sourceSets.main.output.classesDir)
+			fileset(dir: sourceSets.main.output.resourcesDir)
+			resources {
+				fileset(dir: project.libsDir, includes: "*.jar")
+			}
+			platform {
+				jvmarg(value: "-Djavafx.autoproxy.disable=true")
+				jvmarg(value: "-Djava.net.preferIPv4Stack=true")
+			}
+		}
+		
+		antfx.deploy(
+			outdir: project.distsDir,
+			outfile: applicationName,
+			nativebundles: "all",
+			width: 800,
+			height: 600
+		) {
+			application(refid: applicationId)
+			info(title: project.name, vendor: "i.volynets") {
+				icon(href: "${sourceSets.main.output.resourcesDir}/icons/${applicationId}.ico")
+			}
+			resources {
+				fileset(dir: project.libsDir, includes: "*.jar")
+			}
+			platform {
+				jvmarg(value: "-Djavafx.autoproxy.disable=true")
+				jvmarg(value: "-Djava.net.preferIPv4Stack=true")
+			}
+		}
+		
+	}
+	
+}
+
+task copyPlugins(type: Copy, dependsOn: jar) {
+	from configurations.plugin
+	into pluginsDir
+}
+
+task run(type: Exec) {
+	executable: "${project.distsDir}/bundles/${applicationId}/${applicationId}.exe"
+}
+
+distTar {
+	from "${project.distsDir}/bundles/${applicationId}"
+	into applicationName
+}
+
+distTar.dependsOn(copyPlugins)
+distTar.enabled = false
+
+distZip {
+	
+	from "${project.distsDir}/bundles/${applicationId}"
+	into applicationName
+	
+	doFirst {
+		baseName = applicationId
+	}
+	
+}
+
+distZip.dependsOn(copyPlugins)

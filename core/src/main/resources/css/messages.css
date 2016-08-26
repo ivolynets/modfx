@@ -1,0 +1,11 @@
+#console {
+	-fx-table-cell-border-color: transparent;
+}
+
+#console > .column-header-background {
+	visibility: hidden;
+	-fx-min-height: 0;
+	-fx-max-height: 0;
+	-fx-pref-height: 0;
+	-fx-padding: -1em;
+}

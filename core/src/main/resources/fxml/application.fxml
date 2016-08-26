@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<stylesheets>
+	   <URL value="@../css/application.css" />
+	</stylesheets>
+	<children>
+	   <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	       <children>
+	           <MenuBar fx:id="mainMenu">
+	               <menus>
+	                   <Menu mnemonicParsing="false" text="File">
+	                       <items>
+	                           <MenuItem mnemonicParsing="false" text="Plugins" />
+	                           <SeparatorMenuItem mnemonicParsing="false" />
+	                           <MenuItem mnemonicParsing="false" text="Exit" />
+	                       </items>
+	                   </Menu>
+	                   <Menu mnemonicParsing="false" text="Edit" />
+	                   <Menu mnemonicParsing="false" text="Tools" />
+	                   <Menu mnemonicParsing="false" text="Help" />
+	               </menus>
+	           </MenuBar>
+	           <ToolBar fx:id="toolBar" styleClass="toolbar" />
+	           <SplitPane fx:id="verticalPanes" orientation="VERTICAL" VBox.vgrow="ALWAYS">
+	               <items>
+	                   <AnchorPane>
+	                       <children>
+	                           <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	                               <children>
+	                                   <ToolBar fx:id="leftToolBox" orientation="VERTICAL" />
+	                                   <SplitPane fx:id="horizontalPanes" HBox.hgrow="ALWAYS">
+	                                       <items>
+	                                           <AnchorPane>
+	                                               <children>
+	                                                   <TabPane fx:id="tabs" rotateGraphic="true" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+	                                               </children>
+	                                           </AnchorPane>
+	                                       </items>
+	                                   </SplitPane>
+	                                   <ToolBar fx:id="rightToolBox" orientation="VERTICAL" />
+	                               </children>
+	                           </HBox>
+	                       </children>
+	                   </AnchorPane>
+	               </items>
+	           </SplitPane>
+	           <HBox>
+	               <children>
+	                   <ToolBar fx:id="bottomToolBox" HBox.hgrow="ALWAYS" />
+	                   <ToolBar fx:id="systemToolBox">
+	                       <items>
+	                           <Separator orientation="VERTICAL" />
+	                       </items>
+	                   </ToolBar>
+	               </children>
+	           </HBox>
+	           <ToolBar styleClass="toolbar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	               <items>
+	                   <ImageView fx:id="statusIcon" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+	                   <Label fx:id="statusMessage">
+	                       <font>
+	                           <Font size="10.0" />
+	                       </font>
+	                   </Label>
+	               </items>
+	           </ToolBar>
+	       </children>
+	   </VBox>
+	</children>
+</AnchorPane>
