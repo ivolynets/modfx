@@ -4,7 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import ua.ivolynets.modfx.control.ApplicationController;
-import ua.ivolynets.modfx.control.event.EventService;
+import ua.ivolynets.modfx.event.EventService;
 import ua.ivolynets.modfx.plugin.PluginManager;
 import ua.ivolynets.modfx.task.TaskService;
 

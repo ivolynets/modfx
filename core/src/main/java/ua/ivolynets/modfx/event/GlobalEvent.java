@@ -1,4 +1,4 @@
-package ua.ivolynets.modfx.control.event;
+package ua.ivolynets.modfx.event;
 
 /**
  * Global application event. This event and its extensions can be used for communication between different modules 

@@ -1,4 +1,4 @@
-package ua.ivolynets.modfx.control.event;
+package ua.ivolynets.modfx.event;
 
 /**
  * Event which is being sent before closing the application.

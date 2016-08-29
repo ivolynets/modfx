@@ -1,4 +1,4 @@
-package ua.ivolynets.modfx.control.event;
+package ua.ivolynets.modfx.event;
 
 /**
  * Interface represents event listener.

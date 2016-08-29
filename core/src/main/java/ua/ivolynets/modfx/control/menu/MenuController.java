@@ -1,4 +1,4 @@
-package ua.ivolynets.modfx.control;
+package ua.ivolynets.modfx.control.menu;
 
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;

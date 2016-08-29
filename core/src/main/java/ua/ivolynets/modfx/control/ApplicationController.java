@@ -14,6 +14,7 @@ import javafx.scene.image.ImageView;
 import ua.ivolynets.modfx.GuiContext;
 import ua.ivolynets.modfx.control.dialog.DialogController;
 import ua.ivolynets.modfx.control.document.DocumentController;
+import ua.ivolynets.modfx.control.menu.MenuController;
 import ua.ivolynets.modfx.control.status.StatusBar;
 import ua.ivolynets.modfx.control.toolbar.ToolBarController;
 import ua.ivolynets.modfx.control.toolbox.BottomToolBoxController;

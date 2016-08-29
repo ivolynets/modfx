@@ -1,4 +1,4 @@
-package ua.ivolynets.modfx.control.event;
+package ua.ivolynets.modfx.event;
 
 import java.util.ArrayList;
 import java.util.Collections;
