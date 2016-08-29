@@ -49,28 +49,29 @@ public class Tool {
 	 * @return	Tool container.
 	 */
 	public AnchorPane getWindow() {
-		return window;
+		return this.window;
 	}
 
 	/**
 	 * @return	Reference to the button responsible for showing/hiding a tool window.
 	 */
 	public ToggleButton getButton() {
-		return button;
+		return this.button;
 	}
 
 	/**
 	 * @return	Reference to the parent container.
 	 */
 	public Parent getRoot() {
-		return root;
+		return this.root;
 	}
 
 	/**
 	 * @return	Component controller.
 	 */
-	public Object getController() {
-		return controller;
+	@SuppressWarnings("unchecked")
+	public <T> T getController() {
+		return (T) this.controller;
 	}
 	
 }
