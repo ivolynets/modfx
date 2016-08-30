@@ -6,7 +6,17 @@ Modular framework for JavaFX applications
 Copyright (c) 2016 Igor Volynets. All rights reserved.
 The product is licensed under MIT License.
 
-**Icons Set**
+**Database Engine**
+
+H2 Database Engine
+This software contains unmodified binary redistributions for
+H2 database engine (http://www.h2database.com/),
+which is dual licensed and available under the MPL 2.0
+(Mozilla Public License) or under the EPL 1.0 (Eclipse Public License).
+An original copy of the license agreement can be found at:
+http://www.h2database.com/html/license.html
+
+**Icon Set**
 
 Fugue Icons
 (c) 2013 Yusuke Kamiyamane. All rights reserved.

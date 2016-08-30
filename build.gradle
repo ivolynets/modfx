@@ -1,13 +1,15 @@
 allprojects {
-    apply plugin: "eclipse"
+    
+	apply plugin: "eclipse"
 	apply plugin: "idea"
+	
 }
 
 subprojects {
     
     apply plugin: "java"
-    
-    configurations {
+	
+	configurations {
         plugin
         provided
         embedded
@@ -29,15 +31,20 @@ subprojects {
     
 	eclipse {
 		classpath {
+			
 			plusConfigurations += [configurations.embedded]
 			plusConfigurations += [configurations.provided]
+			
+			downloadSources = true
+			downloadJavadoc = true
+			
 		}
 	}
 	
     idea {
         module {
-            scope.COMPILE.plus += [configurations.embedded]
-            scope.PROVIDED.plus += [configurations.provided]
+            scopes.COMPILE.plus += [configurations.embedded]
+            scopes.PROVIDED.plus += [configurations.provided]
         }
     }
 	

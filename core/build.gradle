@@ -1,4 +1,4 @@
-import groovy.NamespaceBuilder
+import groovy.xml.NamespaceBuilder
 
 apply plugin: "distribution"
 
@@ -10,15 +10,13 @@ def preloaderClassName = "ua.ivolynets.modfx.ModfxPreloader"
 def pluginsDir = "${buildDir}/distributions/bundles/${applicationId}/plugins"
 
 def h2Version = "1.4.190"
-def jerseyVersion = "1.9"
 
 dependencies {
 	
 	compile files("${javaRuntime}/lib/jfxrt.jar")
 	compile files("${javaRuntime}/../lib/ant-javafx.jar")
 	
-	provided "com.h2database.h2:${h2Version}"
-	provided "com.sun.jersey:jersey-client:${jerseyVersion}"
+	provided "com.h2database:h2:${h2Version}"
 	
 }
 
@@ -91,7 +89,7 @@ task copyPlugins(type: Copy, dependsOn: jar) {
 }
 
 task run(type: Exec) {
-	executable: "${project.distsDir}/bundles/${applicationId}/${applicationId}.exe"
+	executable "${project.distsDir}/bundles/${applicationId}/${applicationId}.exe"
 }
 
 distTar {

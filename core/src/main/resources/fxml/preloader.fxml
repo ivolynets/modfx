@@ -10,7 +10,7 @@
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" style="-fx-background-color: gray;" fx:controller="ua.ivolynets.modfx.control.PreloaderController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
         <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="191.0" progress="0.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" />
         <Label fx:id="progressMessage" layoutX="25.0" layoutY="208.0" textFill="WHITE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
