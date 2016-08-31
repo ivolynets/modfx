@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:controller="ua.ivolynets.modfx.control.dialog.DialogController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+	   <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	       <children>
+	           <AnchorPane maxWidth="72.0" minWidth="72.0" prefWidth="72.0" HBox.hgrow="ALWAYS">
+	               <children>
+	                   <ImageView fx:id="icon" fitHeight="32.0" fitWidth="32.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+	                       <image>
+	                           <Image url="@../icons/dialog_information.png" />
+	                       </image>
+	                   </ImageView>
+	               </children>
+	           </AnchorPane>
+	           <AnchorPane HBox.hgrow="ALWAYS">
+	               <children>
+	                   <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	                       <children>
+	                           <Label fx:id="message" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" text="Lorem ipsum dolor set amet ..." wrapText="true" VBox.vgrow="ALWAYS">
+	                               <VBox.margin>
+	                                   <Insets bottom="10.0" />
+	                               </VBox.margin>
+	                           </Label>
+	                           <TextArea fx:id="details" editable="false" maxHeight="200.0" maxWidth="300.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="300.0" visible="false">
+	                               <VBox.margin>
+                                       <Insets bottom="10.0" />
+                                   </VBox.margin>
+	                           </TextArea>
+	                           <HBox alignment="CENTER_RIGHT" VBox.vgrow="NEVER">
+	                               <children>
+	                                   <Button fx:id="positiveButton" defaultButton="true" mnemonicParsing="false" text="Yes">
+	                                       <HBox.margin>
+	                                           <Insets left="5.0" />
+	                                       </HBox.margin>
+	                                   </Button>
+	                                   <Button fx:id="negativeButton" mnemonicParsing="false" text="No">
+                                           <HBox.margin>
+                                               <Insets left="5.0" />
+                                           </HBox.margin>
+                                       </Button>
+                                       <Button fx:id="cancelButton" cancelButton="true" mnemonicParsing="false" text="Cancel">
+                                           <HBox.margin>
+                                               <Insets left="5.0" />
+                                           </HBox.margin>
+                                       </Button>
+	                               </children>
+	                           </HBox>
+	                       </children>
+	                   </VBox>
+	               </children>
+	               <HBox.margin>
+	                   <Insets bottom="20.0" right="20.0" top="20.0" />
+	               </HBox.margin>
+	           </AnchorPane>
+	       </children>
+	   </HBox>
+	</children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+allprojects {
+    
+	apply plugin: "eclipse"
+	apply plugin: "idea"
+	
+}
+
+subprojects {
+    
+    apply plugin: "java"
+	
+	configurations {
+        plugin
+        provided
+        embedded
+    }
+    
+    sourceSets {
+        
+		main {
+            
+            compileClasspath += configurations.embedded
+            compileClasspath += configurations.provided
+            
+            runtimeClasspath += configurations.provided
+            
+            
+        }
+		
+    }
+    
+	eclipse {
+		classpath {
+			
+			plusConfigurations += [configurations.embedded]
+			plusConfigurations += [configurations.provided]
+			
+			downloadSources = true
+			downloadJavadoc = true
+			
+		}
+	}
+	
+    idea {
+        module {
+            scopes.COMPILE.plus += [configurations.embedded]
+            scopes.PROVIDED.plus += [configurations.provided]
+        }
+    }
+	
+	repositories {
+		mavenLocal()
+		mavenCentral()
+	}
+	
+	jar {
+		from {
+			configurations.embedded.collect { it.isDirectory() ? it : zipTree(it) }
+		}
+	}
+	
+}
