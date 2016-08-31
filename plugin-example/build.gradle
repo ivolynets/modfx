@@ -1,0 +1,14 @@
+dependencies {
+	provided project(":core")
+	
+	// emdedded "some plugin-specific dependency that should be bundled"
+}
+
+jar {
+	
+	manifest {
+		attributes("Plugin-Class": "ua.ivolynets.modfx.plugin.example.ExamplePlugin")
+	}
+	
+	zip64 = true
+}

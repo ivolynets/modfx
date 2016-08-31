@@ -18,6 +18,8 @@ dependencies {
 	
 	provided "com.h2database:h2:${h2Version}"
 	
+	plugin project(":plugin-example") // add plugin to build
+	
 }
 
 jar {

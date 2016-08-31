@@ -187,7 +187,7 @@ public class DbManager {
 		final PreparedStatement statement = this.connection.prepareStatement(query.toString());
 		this.populateStatement(statement, fields, values);
 		
-		statement.executeQuery();
+		statement.executeUpdate();
 		
 	}
 	
@@ -244,7 +244,7 @@ public class DbManager {
 		final PreparedStatement statement = this.connection.prepareStatement(query.toString());
 		this.populateStatement(statement, Arrays.asList(fields), Arrays.asList(values));
 		
-		statement.executeQuery();
+		statement.executeUpdate();
 		
 	}
 	

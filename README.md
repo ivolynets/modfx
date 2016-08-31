@@ -1,7 +1,15 @@
 # ModFX
 Modular framework for JavaFX applications
 
-# Licenses Information
+## Key Features
+
+* Plugins support
+* Event service for communication between different components.
+* Task service for running background tasks.
+* Built-in configuration manager.
+* Internal database with simple ORM engine. 
+
+## Licenses Information
 
 Copyright (c) 2016 Igor Volynets. All rights reserved.
 The product is licensed under MIT License.

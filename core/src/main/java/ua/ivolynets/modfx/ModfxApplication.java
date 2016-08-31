@@ -43,6 +43,7 @@ public class ModfxApplication extends Application {
 		
 		stage.setTitle("Mod FX Application");
 		stage.getIcons().add(ApplicationResources.ICON_APPLICATION);
+		stage.setMaximized(true);
 		
 		stage.setScene(this.context.scene());
 		stage.show();
@@ -76,6 +77,8 @@ public class ModfxApplication extends Application {
 		final File[] jars = dir.listFiles((FileFilter) (pathname) -> {
 			return pathname.isFile() && pathname.getName().endsWith(".jar");
 		});
+		
+		if (jars == null) return; // Nothing to load
 		
 		// Add plugins to classpath
 		

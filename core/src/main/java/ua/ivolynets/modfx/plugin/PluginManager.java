@@ -41,7 +41,7 @@ public class PluginManager {
 		try {
 			
 			URL[] urls = new URL[jars.length];
-			for (int i = 0; i < jars.length; i++) urls[i].toURI().toURL();
+			for (int i = 0; i < jars.length; i++) urls[i] = jars[i].toURI().toURL();
 			
 			this.loader = new URLClassLoader(urls, Thread.currentThread().getContextClassLoader());
 			Thread.currentThread().setContextClassLoader(this.loader);

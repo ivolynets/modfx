@@ -25,7 +25,7 @@ public class BottomToolBoxController extends AbstractToolBoxController {
 			if (change.getList().isEmpty()) {
 				panes.getItems().remove(toolWindow);
 			} else {
-				panes.getItems().add(0, toolWindow);
+				panes.getItems().add(toolWindow);
 				panes.setDividerPosition(0, 0.8);
 			}
 			

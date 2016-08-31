@@ -28,7 +28,7 @@ public class RightToolBoxController extends AbstractToolBoxController {
 			if (change.getList().isEmpty()) {
 				panes.getItems().remove(toolWindow);
 			} else {
-				panes.getItems().add(0, toolWindow);
+				panes.getItems().add(toolWindow);
 				panes.setDividerPosition(panes.getItems().size() - 2, 0.8);
 			}
 			
