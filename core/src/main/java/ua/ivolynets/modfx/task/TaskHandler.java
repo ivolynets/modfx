@@ -7,7 +7,7 @@ import javafx.event.EventHandler;
 
 /**
  * Class represents a task handler.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class TaskHandler extends FutureTask<Object> {
 	

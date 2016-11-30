@@ -13,7 +13,7 @@ import ua.ivolynets.modfx.control.PreloaderController;
 
 /**
  * Application preloader.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class ModfxPreloader extends Preloader {
 
@@ -101,7 +101,7 @@ public class ModfxPreloader extends Preloader {
 	
 	/**
 	 * Preloader notification message.
-	 * @author Igor Volynets <ig.volynets@gmail.com>
+	 * @author Igor Volynets
 	 */
 	public static class MessageNotification implements PreloaderNotification {
 		

@@ -14,7 +14,7 @@ import ua.ivolynets.modfx.GuiContext;
 
 /**
  * Class intended for pop-up windows management.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class WindowController {
 	

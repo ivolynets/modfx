@@ -7,7 +7,7 @@ import javafx.scene.control.ProgressIndicator;
 
 /**
  * Class represents a background task.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public abstract class Task implements Runnable {
 	

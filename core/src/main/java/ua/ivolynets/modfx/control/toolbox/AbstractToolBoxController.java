@@ -18,7 +18,7 @@ import javafx.scene.text.Font;
 
 /**
  * Implements basic functionality of the tool box controller. 
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public abstract class AbstractToolBoxController implements ToolBoxController {
 	

@@ -21,7 +21,7 @@ import ua.ivolynets.modfx.task.Task;
 
 /**
  * Controller class for users component.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class UsersController implements Initializable {
 

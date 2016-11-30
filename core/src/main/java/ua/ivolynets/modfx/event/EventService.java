@@ -15,7 +15,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * Service responsible for handling application events. It's running in separate thread and delegates received events 
  * processing to registered listeners.
  * 
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class EventService {
 

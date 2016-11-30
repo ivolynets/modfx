@@ -10,7 +10,7 @@ import ua.ivolynets.modfx.plugin.example.model.User;
 
 /**
  * Example plugin main class.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class ExamplePlugin implements ModfxPlugin {
 

@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 
 /**
  * General interface for tool box controllers.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public interface ToolBoxController {
 	

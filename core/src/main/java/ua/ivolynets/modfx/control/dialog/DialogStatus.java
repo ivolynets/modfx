@@ -2,7 +2,7 @@ package ua.ivolynets.modfx.control.dialog;
 
 /**
  * Set of statuses returned by dialog windows.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public enum DialogStatus {
 	POSITIVE, 	// when positive button pressed
