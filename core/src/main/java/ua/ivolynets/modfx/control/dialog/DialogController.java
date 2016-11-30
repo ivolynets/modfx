@@ -22,7 +22,7 @@ import ua.ivolynets.modfx.GuiContext;
 
 /**
  * Controller of alerts.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class DialogController implements Initializable {
 	

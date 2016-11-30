@@ -18,7 +18,7 @@ import javafx.util.Callback;
 
 /**
  * Controller class for the tasks monitor.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class TaskMonitorController implements Initializable {
 

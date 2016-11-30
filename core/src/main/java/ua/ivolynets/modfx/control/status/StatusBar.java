@@ -10,7 +10,7 @@ import ua.ivolynets.modfx.control.toolbox.ToolBoxController;
 
 /**
  * Application status bar.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class StatusBar {
 	

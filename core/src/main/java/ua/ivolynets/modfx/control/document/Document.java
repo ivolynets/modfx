@@ -5,7 +5,7 @@ import javafx.scene.control.Tab;
 
 /**
  * Class represents application document.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class Document {
 	

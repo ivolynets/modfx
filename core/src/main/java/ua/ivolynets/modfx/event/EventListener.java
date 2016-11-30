@@ -4,7 +4,7 @@ package ua.ivolynets.modfx.event;
  * Interface represents event listener.
  * 
  * @param <T>	Event type.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public interface EventListener<T extends Event> {
 	

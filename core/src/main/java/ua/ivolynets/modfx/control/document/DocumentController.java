@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 
 /**
  * Class intended for documents management. Documents are opened as tabs.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class DocumentController {
 	

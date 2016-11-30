@@ -23,7 +23,7 @@ import org.h2.jdbcx.JdbcDataSource;
 
 /**
  * Local database manager.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class DbManager {
 

@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Field annotated with this annotation will not be persisted in the database.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

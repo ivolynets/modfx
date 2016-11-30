@@ -7,7 +7,7 @@ import ua.ivolynets.modfx.plugin.example.model.User;
 
 /**
  * Event indicates that users were fetched from the database.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class UsersFetchedEvent implements Event {
 	

@@ -23,7 +23,7 @@ import ua.ivolynets.modfx.control.toolbox.Tool;
  * Service responsible for handling background tasks. It's running a thread pool and submits tasks to it. It also 
  * controls execution of submitted tasks.
  * 
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class TaskService {
 

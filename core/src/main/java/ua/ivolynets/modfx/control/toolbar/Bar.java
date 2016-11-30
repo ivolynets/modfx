@@ -4,7 +4,7 @@ import javafx.scene.Parent;
 
 /**
  * Class represents a separate bar on the tool bar.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class Bar {
 	

@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation indicates that field is a row primary key.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

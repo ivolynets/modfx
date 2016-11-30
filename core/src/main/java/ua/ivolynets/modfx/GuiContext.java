@@ -15,7 +15,7 @@ import ua.ivolynets.modfx.task.TaskService;
 
 /**
  * Class contains context of the application.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class GuiContext {
 	

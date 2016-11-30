@@ -4,7 +4,7 @@ import ua.ivolynets.modfx.GuiContext;
 
 /**
  * General interface for ModFX plugins.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public interface ModfxPlugin {
 	

@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 
 /**
  * Application resources bundle.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class ApplicationResources {
 	

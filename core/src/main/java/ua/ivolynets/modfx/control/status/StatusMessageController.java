@@ -24,7 +24,7 @@ import ua.ivolynets.modfx.ApplicationResources;
 
 /**
  * Controller of the status message bar.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class StatusMessageController implements Initializable {
 	
@@ -164,7 +164,7 @@ public class StatusMessageController implements Initializable {
 	
 	/**
 	 * Inner class represents status message entry.
-	 * @author Igor Volynets <ig.volynets@gmail.com>
+	 * @author Igor Volynets
 	 */
 	public class StatusMessageEntry {
 		

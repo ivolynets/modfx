@@ -26,7 +26,7 @@ import ua.ivolynets.modfx.control.window.WindowController;
 
 /**
  * Controller for the main application window.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class ApplicationController implements Initializable {
 	

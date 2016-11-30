@@ -5,7 +5,7 @@ package ua.ivolynets.modfx.event;
  * since its name is known in advance.
  * 
  * @param <T>	Type of event payload.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class GlobalEvent<T> implements Event {
 	

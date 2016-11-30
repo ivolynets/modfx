@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation indicates that field is auto-increment field.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

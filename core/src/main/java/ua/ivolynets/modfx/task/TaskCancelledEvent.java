@@ -5,7 +5,7 @@ import javafx.event.EventType;
 
 /**
  * Event which is indicating that task is cancelled.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class TaskCancelledEvent extends Event {
 

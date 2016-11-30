@@ -11,7 +11,7 @@ import javafx.scene.control.ToolBar;
 
 /**
  * Controller class for tool bars.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class ToolBarController {
 	

@@ -5,7 +5,7 @@ import javafx.scene.control.MenuBar;
 
 /**
  * Main menu controller.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class MenuController {
 	

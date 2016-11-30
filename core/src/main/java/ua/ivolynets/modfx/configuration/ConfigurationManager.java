@@ -12,7 +12,7 @@ import org.h2.jdbcx.JdbcDataSource;
 
 /**
  * Application configuration manager based on the H2 local database.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class ConfigurationManager {
 	

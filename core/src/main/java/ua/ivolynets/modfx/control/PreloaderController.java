@@ -10,7 +10,7 @@ import javafx.scene.control.ProgressBar;
 
 /**
  * Controller class of the application preloader.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class PreloaderController implements Initializable {
 	

@@ -4,7 +4,7 @@ import ua.ivolynets.modfx.db.Key;
 
 /**
  * Model class represents a user.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class User {
 

@@ -6,7 +6,7 @@ import javafx.scene.layout.AnchorPane;
 
 /**
  * Class represents a tool component.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class Tool {
 	

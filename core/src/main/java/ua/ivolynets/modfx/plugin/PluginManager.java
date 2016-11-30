@@ -16,7 +16,7 @@ import javafx.fxml.FXMLLoader;
 
 /**
  * Plugin manager.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class PluginManager {
 	

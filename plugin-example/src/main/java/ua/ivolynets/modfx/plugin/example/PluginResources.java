@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 
 /**
  * Example plugin resource bundle.
- * @author Igor Volynets <ig.volynets@gmail.com>
+ * @author Igor Volynets
  */
 public class PluginResources {
 	
